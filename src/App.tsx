@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/styles/App.css";
 import { useEffect, useRef, useState } from "react";
 // import Header from "./components/Header";
 import Links from "./components/Links";
