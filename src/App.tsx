@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useEffect, useRef, useState } from "react";
+// import Header from "./components/Header";
+import Links from "./components/Links";
+import Profile from "./components/Profile";
+import NET from "vanta/dist/vanta.net.min";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const [vantaEffect, setVantaEffect] = useState<HTMLDivElement>();
+	const vantaRef = useRef(null);
+	useEffect(() => {
+		if (!vantaEffect) {
+			setVantaEffect(
+				NET({
+					el: vantaRef.current,
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					scale: 2.0,
+					color: 0x459862,
+					backgroundColor: 0x202020,
+				})
+			);
+		}
+	}, [vantaEffect]);
+
+	return (
+		<div ref={vantaRef} className="App">
+			{/* <Header /> */}
+			<Profile />
+			<Links />
+		</div>
+	);
+};
 
 export default App;
