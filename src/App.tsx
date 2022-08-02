@@ -12,9 +12,9 @@ const App = () => {
       setVantaEffect(
         NET({
           el: vantaRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
+          mouseControls: false,
+          touchControls: false,
+          gyroControls: true,
           minHeight: 200.0,
           minWidth: 200.0,
           scale: 2.0,
