@@ -1,19 +1,19 @@
 .profile {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .profile-photo {
-	height: 120px;
-	border-radius: 200px;
-	aspect-ratio: 1/1;
-	margin: 0 auto;
+  height: 100px;
+  border-radius: 200px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
 }
 
 .profile-name {
-	font-size: 1.4rem;
-	color: #ffffff;
+  font-size: 1.06rem;
+  color: #ffffff;
 }
