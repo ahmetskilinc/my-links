@@ -16,7 +16,6 @@
 	background-color: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(5px);
-	padding: 6px 0;
 	transition: 200ms all ease-in-out;
 	border-radius: 8px;
 }
@@ -26,10 +25,16 @@
 	font-size: 0.8rem;
 }
 
+a.link > p.has-description {
+	margin-bottom: 0.5rem;
+}
+
 .link:hover {
 	background-color: rgba(0, 0, 0, 0.36);
 }
 
 .link-description {
-	font-size: 0.64rem;
+	font-size: 0.72rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }

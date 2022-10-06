@@ -1,23 +1,23 @@
 import { v4 as uuid } from "uuid";
 
-type link = {
+interface Link {
 	id: string;
 	title: string;
 	link: string;
 	description?: string;
-};
+}
 
-const links: link[] = [
-	{
-		id: uuid(),
-		title: "Portfolio",
-		link: "https://ahmetk.dev",
-	},
-	{
-		id: uuid(),
-		title: "Blog",
-		link: "https://blog.ahmetk.dev",
-	},
+const links: Link[] = [
+	// {
+	// 	id: uuid(),
+	// 	title: "Portfolio",
+	// 	link: "https://ahmetk.dev",
+	// },
+	// {
+	// 	id: uuid(),
+	// 	title: "Blog",
+	// 	link: "https://blog.ahmetk.dev",
+	// },
 	{
 		id: uuid(),
 		title: "Github",
@@ -33,11 +33,16 @@ const links: link[] = [
 		title: "Linkedin",
 		link: "https://linkedin.com/in/ahmetskilinc",
 	},
+	// {
+	// 	id: uuid(),
+	// 	title: "Kilinc Media",
+	// 	link: "https://kilinc.me",
+	// 	description: "Creative Web Agency",
+	// },
 	{
 		id: uuid(),
-		title: "Kilinc Media",
-		link: "https://kilinc.me",
-		description: "Creative Web Agency",
+		title: "Instagram",
+		link: "https://instagram.com/ahmetkdev",
 	},
 ];
 
